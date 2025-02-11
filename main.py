@@ -26,7 +26,7 @@ def main():
     Asteroid.containers = (asteroids, updatables, drawables)
     AsteroidField.containers = (updatables,)
     Shot.containers = (updatables, drawables, shots)
-    player = Player(x, y, shots)
+    player = Player(x, y)
     asteroidfield = AsteroidField()  
     while(True):
         for event in pygame.event.get():
